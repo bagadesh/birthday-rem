@@ -1,11 +1,11 @@
 use rocket::serde::Serialize;
-use domain::models::Post;
+use domain::models::{Remainder};
 
 #[derive(Serialize)]
 pub enum ResponseBody {
     Message(String),
-    Post(Post),
-    Posts(Vec<Post>)
+    Remainder(Remainder),
+    Remainders(Vec<Remainder>),
 }
 
 #[derive(Serialize)]

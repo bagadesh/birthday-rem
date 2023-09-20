@@ -2,7 +2,7 @@
 
 diesel::table! {
     remainders (user_id) {
-        user_id -> Int4,
+        user_id -> Varchar,
         remainder_name -> Varchar,
         birthdate -> Date,
     }
